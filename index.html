@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
+      <nav class="main-navigation clearfix">
         <ul>
           <li>
             <a href="#">Информация</a>
@@ -30,23 +30,21 @@
     </header>
     <main class="container">
       <div class="main-banner">
-        <img src="img/background.jpg" width="1200" height="508" alt="Природа Седоны">
-        <img src="img/shape.png" width="1200" height="57" alt="">
       </div>
       <div class="feautures">
         <div class="feautures-header">
           <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
           <p>Рассмотрим 5 причин, по которым Седона круче чем Гранд каньон!</p>
         </div>
-        <div class="feautures-banner">
+        <div class="feautures-banner clearfix">
           <div class="feautures-item">
             <h3>Настоящий городок</h3>
             <p>- №1 -</p>
             <p>Седона - не атракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img src="img/feautures-1.jpg" width="800" height="256" alt="Городской пейзаж Седоны">
+          <div class="feautures-img"></div>
         </div>
-        <div class="feautures-block-top">
+        <div class="feautures-block-top clearfix">
           <div class="feautures-item">
             <img src="img/icon-home.png" width="80" height="80" alt="Домик">
             <h3>Жилье</h3>
@@ -63,27 +61,27 @@
             <p>Не только китайского, но и местного производства!</p>
           </div>
         </div>
-        <div class="feautures-banner">
-          <img src="img/feautures-2.jpg" width="800" height="256" alt="Мост дьявола">
+        <div class="feautures-banner clearfix right">
+          <div class="feautures-img"></div>
           <div class="feautures-item">
             <h3>Там есть мост дьявола</h3>
             <p>- №2 -</p>
             <p>Да, По нему можно пройти! Если конечно вы осмелитесь</p>
           </div>
         </div>
-        <div class="feautures-block-bot">
+        <div class="feautures-block-bot clearfix">
           <div class="feautures-item">
-            <h3>Небольшая площадь</h3>
+            <h3>Небольшая<br>площадь</h3>
             <p>- №3 -</p>
             <p>Все достопримечательности находятся очень близко</p>
           </div>
           <div class="feautures-item">
-            <h3>Красивая дорога</h3>
+            <h3>Красивая<br>дорога</h3>
             <p>- №4 -</p>
             <p>Ехать в Седону из Лас-вегаса совсем не скучно!</p>
           </div>
           <div class="feautures-item">
-            <h3>Мало туристов</h3>
+            <h3>Мало<br>туристов</h3>
             <p>- №5 -</p>
             <p>Большинство едет в Гранд кньон и толпится там</p>
           </div>
@@ -92,53 +90,47 @@
       <div class="search-block">
         <h2>Заинтересовались?</h2>
         <div>
-          Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостинниц в Седоне.
+          Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостинниц в Седоне.
         </div>
         <a href="#" class="show-search-form">Поиск гостинницы в Седоне</a>
-        <form class="search-form" action="#" method="post">
-          <p>
-            <label>
-              Дата заезда:
-              <input type="date" name="date-in" value="">
-            </label>
-            <img src="img/calendar-icon.png" width="21" height="22" alt="">
-          </p>
-          <p>
-            <label>
-              Дата выезда:
-              <input type="date" name="date-out" value="">
-            </label>
-            <img src="img/calendar-icon.png" width="21" height="22" alt="">
-          </p>
-          <p>
-            Взрослые:
-            <input type="number" name="grown" value="1" placeholder="" min="0" step="1">
-            Дети:
-            <input type="number" name="children" value="0" placeholder="" min="0" step="1">
-          </p>
+        <form action="#" method="post">
+          <label>
+            Дата заезда:
+            <input type="date" name="date-in" value="">
+          </label>
+          <img src="img/calendar-icon.png" width="21" height="22" alt="">
+          <label>
+            Дата выезда:
+            <input type="date" name="date-out" value="">
+          </label>
+          <img src="img/calendar-icon.png" width="21" height="22" alt="">
+          Взрослые:
+          <input type="number" name="grown" value="1" placeholder="" min="0" step="1">
+          Дети:
+          <input type="number" name="children" value="0" placeholder="" min="0" step="1">
           <button class="btn" type="submit">Найти</button>
         </form>
       </div>
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88104.48589446253!2d-111.84249582392972!3d34.85113763754222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sby!4v1477332306990"
-          width="1200" height="594" style="border:0" allowfullscreen>
+          width="100%" height="592px" style="border:0" allowfullscreen>
         </iframe>
       </div>
+      <footer class="main-footer clearfix">
+        <div class="hashtag">
+          #visitsedona
+        </div>
+        <div class="footer-social">
+          <a class="social-btn social-btn-twitter" href="#" target="_blank">Твиттер</a>
+          <a class="social-btn social-btn-facebook" href="#" target="_blank">Фейсбук</a>
+          <a class="social-btn social-btn-youtube" href="#" target="_blank">Ютуб</a>
+        </div>
+        <div class="footer-logo">
+          <a href="https://htmlacademy.ru/" target="_blank">
+            <img src="img/html-academy-logo.png" width="198" height="39" alt="Html Academy логотип">
+          </a>
+        </div>
+      </footer>
     </main>
-    <footer class="main-footer">
-      <div class="hashtag">
-        #visitsedona
-      </div>
-      <div class="footer-social">
-        <a class="social-btn social-btn-twitter" href="#" target="_blank">Твиттер</a>
-        <a class="social-btn social-btn-facebook" href="#" target="_blank">Фейсбук</a>
-        <a class="social-btn social-btn-youtube" href="#" target="_blank">Ютуб</a>
-      </div>
-      <div class="footer-logo">
-        <a href="https://htmlacademy.ru/" target="_blank">
-          <img src="img/html-academy-logo.png" width="198" height="39" alt="Html Academy логотип">
-        </a>
-      </div>
-    </footer>
   </body>
 </html>
